@@ -17,7 +17,7 @@ $ cd 0x0p1n3r
 $ bash setup.sh
 ```
 
-## Adding Virustotal Key 
+## Adding Virustotal API Key 
 ```
 
 Go to https://www.virustotal.com/ and Login
