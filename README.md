@@ -14,7 +14,7 @@
 ```
 $ git clone https://github.com/z3dc0ps/0x0p1n3r 
 $ cd 0x0p1n3r
-$ pip3 install -r requirements.txt
+$ bash setup.sh
 ```
 
 ## Adding Virustotal Key 
