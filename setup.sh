@@ -1,3 +1,4 @@
+sudo apt  install golang-go
 sudo apt  install cargo
 sudo apt install python3-pip
 pip3 install -r requirements.txt
@@ -6,3 +7,6 @@ cd findomain
 cargo build --release
 sudo cp target/release/findomain /usr/bin/
 cd ../
+go get -u github.com/tomnomnom/httprobe
+go get -u github.com/tomnomnom/assetfinder
+export PATH=$PATH:$(go env GOPATH)/bin
