@@ -1,0 +1,11 @@
+argparse
+dnspython
+requests
+terminal_banner
+termcolor
+socket.py
+progress
+beautifulsoup4
+requests
+xlsxwriter	
+json2json
