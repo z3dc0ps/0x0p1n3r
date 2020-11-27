@@ -1,6 +1,7 @@
 #!/bin/bash
 #Coded-by Jimmi Simon
 
+export PATH=$PATH:$(go env GOPATH)/bin
 
 echo -e "\n▁ ▂ ▄ ▅ ▆ ▇ █   🎀 【﻿ 𝟶x𝟶ᴘ𝟷ɴ𝟹ʀ 】 🎀   █ ▇ ▆ ▅ ▄ ▂ ▁
 
