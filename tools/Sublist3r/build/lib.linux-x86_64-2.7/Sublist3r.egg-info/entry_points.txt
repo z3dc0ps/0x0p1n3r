@@ -1,0 +1,3 @@
+[console_scripts]
+sublist3r = sublist3r:interactive
+
