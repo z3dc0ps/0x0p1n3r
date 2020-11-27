@@ -9,3 +9,4 @@ beautifulsoup4
 requests
 xlsxwriter	
 json2json
+httpx
