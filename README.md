@@ -6,9 +6,28 @@
   <img align="center"  width="300px" height="50px;" src="https://forthebadge.com/images/badges/made-with-python.svg">
   
   </p>
+<br>
+<h4>0x0p1n3r is set of combination of other tools and one line scripts to find subdomains easily </h4>
 
 ## Note :
    Read README.md before Installation 
+   
+## Features
+    
+    Scripts:
+          assetfinder
+          gau
+          knockpy
+          sublist3r
+          Sub-Z
+          v1d0m
+    Domains:
+          crt.sh
+          dns.bufferover.run
+          riddler.io
+          web.archive.org
+          securitytrails.com
+        
 ## Installation 
 
 ```
