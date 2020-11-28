@@ -1,3 +1,20 @@
+<meta name="image" property="og:image" content="../img/admirer/head1.jpeg">
+		<meta name="description" property="og:description" content="HackTheBox Admirer writeup , Admirer Walkthrough">
+		<meta name="author" content="jimmisimon">
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		
 <h1 align="center"> 0x0p1n3r</h1>
 <h3 align="center">All in one Subdomain Enumeration Tool</h3>
 
