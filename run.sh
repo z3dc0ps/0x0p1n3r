@@ -1,14 +1,13 @@
 #!/bin/bash
 #Coded-by Jimmi Simon
+#version=V1.2
 
 export PATH=$PATH:$(go env GOPATH)/bin
 
 echo -e "\n▁ ▂ ▄ ▅ ▆ ▇ █   🎀 【﻿ 𝟶x𝟶ᴘ𝟷ɴ𝟹ʀ 】 🎀   █ ▇ ▆ ▅ ▄ ▂ ▁
 
-	       Developed By : Jimmi Simon
-
-	linkedin -	https://www.linkedin.com/in/jimmisimon/
-	Site	 -	http://jimmisimon.in/projects.php\n"
+			V1.2
+	       Developed By : Jimmi Simon\n"
 
 echo "Enter the Domain : "
 domain=`python3 domain.py`
