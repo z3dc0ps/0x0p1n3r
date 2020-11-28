@@ -18,9 +18,10 @@
 
 <p align="center">
   <img align="center" width="200px" height="50px;" src="https://www.fullstackpython.com/img/logos/bash-wide.jpg" >  
-  <img align="center"  width="300px" height="50px;" src="https://assets-cdn.anaconda.com/assets/company/anaconda-logo.png">
-  
+  <img align="center"  width="300px" height="50px;" src="https://assets-cdn.anaconda.com/assets/company/anaconda-logo.png"><br><br>
+  <img src="https://img.shields.io/badge/0x0p1n3r-v1.2-blue">
   </p>
+  
 <br>
 <h4>0x0p1n3r is set of combination of other tools and one line scripts to find subdomains easily </h4>
 
