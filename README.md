@@ -18,7 +18,7 @@
 
 <p align="center">
   <img align="center" width="200px" height="50px;" src="https://www.fullstackpython.com/img/logos/bash-wide.jpg" >  
-  <img align="center"  width="300px" height="50px;" src="https://forthebadge.com/images/badges/made-with-python.svg">
+  <img align="center"  width="300px" height="50px;" src="https://assets-cdn.anaconda.com/assets/company/anaconda-logo.png">
   
   </p>
 <br>
