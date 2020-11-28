@@ -65,6 +65,11 @@ Copy API key and Paste in config.json
 $ bash run.sh
 ```
 
+## Update
+```
+$ bash update.sh
+```
+
 ## Special Thanks
 
 
