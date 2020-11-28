@@ -72,7 +72,7 @@ $ bash run.sh
  [@Corben Leo](https://github.com/lc)<br>
  [@Ahmed Aboul-Ela](https://github.com/aboul3la)<br>
  [@Jitesh Kumar](https://github.com/j1t3sh)<br>
- [@Jitesh Kumar](https://github.com/n4xh4ck5)<br>
+ [@Nacho Brihuega](https://github.com/n4xh4ck5)<br>
  [@KingOfBugbounty](https://github.com/KingOfBugbounty)<br>
  <br><br>
  
