@@ -9,7 +9,7 @@ then
         cd ../;
 	sudo rm -r 0x0p1n3r ; 
 	git clone https://github.com/z3dc0ps/0x0p1n3r ; 
-	printf "\n${Green} close and open 0x0p1n3r again ${NC} or ${Green} cd ../0x0p1n3r"
+	printf "\n${Green} close and open 0x0p1n3r again ${NC} or ${Green} cd ../0x0p1n3r \n"
 
 elif [[ $1 == "" ]]
 then
@@ -81,12 +81,12 @@ then
 		final=`cat $domain"new" | sort -u > $domain`
 		echo "100% completed"
 		sudo rm $domain"new";
-		printf "\n ${Green}Result Saved in $domain";
+		printf "\n ${Green}Result Saved in $domain \n";
 	fi
 else
         echo "Enter Correct Option";
         printf "${Green} Usage : bash run.sh\n";
-        printf "${Green} Update: bash run.sh -u";
+        printf "${Green} Update: bash run.sh -u \n";
 
 fi
 
