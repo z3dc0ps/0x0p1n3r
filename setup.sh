@@ -1,3 +1,5 @@
+sudo snap install amass
+sudo apt install amass
 sudo apt install golang-go
 sudo apt install cargo
 sudo apt install python3-pip
