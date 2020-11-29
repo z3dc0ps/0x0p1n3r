@@ -31,6 +31,7 @@
 ## Features
     
     Scripts:
+    	  amass
           assetfinder
           gau
           knockpy
@@ -41,9 +42,8 @@
           crt.sh
           dns.bufferover.run
           riddler.io
-          web.archive.org
           securitytrails.com
-        
+          web.archive.org
 ## Installation 
 
 ```
@@ -68,7 +68,7 @@ $ bash run.sh
 
 ## Update
 ```
-$ bash update.sh
+$ bash run.sh -u
 ```
 
 ## Special Thanks
