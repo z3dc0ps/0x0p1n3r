@@ -28,7 +28,7 @@ then
 		echo "Enter Domain without http/https "
 		exit
 	else
-		cp tools/config.json tools/knock/knockpy/
+		cp config.json tools/knock/knockpy/
 		echo "Domain is $domain , Searching for Subdomains..."
 	
 	
