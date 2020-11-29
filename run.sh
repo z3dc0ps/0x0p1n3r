@@ -9,7 +9,7 @@ then
         cd ../;
 	sudo rm -r 0x0p1n3r ; 
 	git clone https://github.com/z3dc0ps/0x0p1n3r ; 
-	printf "\n${Green} close and open 0x0p1n3r again ${NC} or ${Green} cd ../0x0p1n3r \n"
+	printf "\n\n ${Green} run : cd ../0x0p1n3r ; dos2unix ./*"
 
 elif [[ $1 == "" ]]
 then
