@@ -49,9 +49,9 @@
 ```
 $ git clone https://github.com/z3dc0ps/0x0p1n3r 
 $ cd 0x0p1n3r
-$ apt-get install dos2unix
-$ dos2unix ./*
-$ bash setup.sh
+$ sudo apt-get install dos2unix
+$ sudo dos2unix ./*
+$ sudo bash setup.sh
 ```
 
 ## Adding Virustotal API Key 
