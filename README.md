@@ -31,7 +31,7 @@
 ## Features
     
     Scripts:
-    	amass
+	amass
         assetfinder
         gau
         knockpy
