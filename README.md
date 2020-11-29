@@ -31,19 +31,19 @@
 ## Features
     
     Scripts:
-    	  amass
-          assetfinder
-          gau
-          knockpy
-          sublist3r
-          Sub-Z
-          v1d0m
+    	amass
+        assetfinder
+        gau
+        knockpy
+        sublist3r
+        Sub-Z
+        v1d0m
     Domains:
-          crt.sh
-          dns.bufferover.run
-          riddler.io
-          securitytrails.com
-          web.archive.org
+        crt.sh
+        dns.bufferover.run
+        riddler.io
+        securitytrails.com
+        web.archive.org
 ## Installation 
 
 ```
