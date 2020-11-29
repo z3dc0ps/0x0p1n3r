@@ -1,2 +1,0 @@
-domain=input()
-print(domain)
