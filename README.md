@@ -83,7 +83,7 @@ $ bash run.sh
 
 ## Demo 
 
-<img src="https://raw.githubusercontent.com/z3dc0ps/0x0p1n3r/main/tools/a.PNG" >
+<img src="https://raw.githubusercontent.com/z3dc0ps/0x0p1n3r/main/tools/0x0p1n3r.PNG" >
 
 <a href="http://jimmisimon.in/projects/0x0p1n3r.mp4">Watch Video</a>
 
