@@ -7,7 +7,7 @@ sudo apt install python3-pip
 sudo apt install curl
 sudo apt install jq
 pip3 install -r ./requirements.txt
-git clone https://github.com/Edu4rdSHL/findomain.git toolsfindomain
+git clone https://github.com/Edu4rdSHL/findomain.git tools/findomain
 cd tools/findomain/
 cargo build --release
 sudo cp target/release/findomain /usr/bin/
