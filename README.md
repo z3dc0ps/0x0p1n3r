@@ -19,7 +19,7 @@
 <p align="center">
   <img align="center" width="200px" height="50px;" src="https://www.fullstackpython.com/img/logos/bash-wide.jpg" >  
   <img align="center"  width="300px" height="50px;" src="https://assets-cdn.anaconda.com/assets/company/anaconda-logo.png"><br><br>
-  <img src="https://img.shields.io/badge/0x0p1n3r-v1.4-blue">
+  <img src="https://img.shields.io/badge/0x0p1n3r-v1.5-blue">
   </p>
   
 <br>
@@ -33,17 +33,22 @@
     Scripts:
         amass
         assetfinder
+	findomain
         gau
         knockpy
         sublist3r
         Sub-Z
         v1d0m
     Domains:
+        api.hackertarget.com
         crt.sh
         dns.bufferover.run
         riddler.io
         securitytrails.com
+        sonar.omnisint.io
+        threatcrowd.org
         web.archive.org
+	
 ## Installation 
 
 ```
@@ -52,6 +57,13 @@ $ cd 0x0p1n3r
 $ sudo apt-get install dos2unix
 $ sudo dos2unix ./*
 $ sudo bash setup.sh
+```
+## Update
+
+```
+$ bash run.sh -u
+$ cd ../0x0p1n3r ; dos2unix ./*
+$ bash setup.sh
 ```
 
 ## Adding Virustotal API Key 
@@ -68,13 +80,9 @@ Copy API key and Paste in config.json
 $ bash run.sh
 ```
 
-## Update
-```
-$ bash run.sh -u
-```
 ## Demo 
 
-<img height="500px" width="600px" src="http://jimmisimon.in/projects/0x0p1n3r.PNG" >
+<img height="700px" width="1150px" src="http://jimmisimon.in/projects/0x0p1n3r.png" >
 
 <a href="http://jimmisimon.in/projects/0x0p1n3r.mp4">Watch Video</a>
 
@@ -88,6 +96,7 @@ $ bash run.sh -u
  [@Jitesh Kumar](https://github.com/j1t3sh)<br>
  [@Nacho Brihuega](https://github.com/n4xh4ck5)<br>
  [@KingOfBugbounty](https://github.com/KingOfBugbounty)<br>
+ 
  <br><br>
  
   
