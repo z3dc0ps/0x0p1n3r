@@ -1,6 +1,6 @@
 #!/bin/bash
 #Coded-by Jimmi Simon
-#version=V1.4
+#version=V1.5
 
 NC='\033[0m'
 Green='\033[0;32m'
@@ -15,12 +15,18 @@ elif [[ $1 == "" ]]
 then
         export PATH=$PATH:$(go env GOPATH)/bin
 	
-	echo -e "\n▁ ▂ ▄ ▅ ▆ ▇ █   🎀 【﻿ 𝟶x𝟶ᴘ𝟷ɴ𝟹ʀ 】 🎀   █ ▇ ▆ ▅ ▄ ▂ ▁
+	printf "
+			  ___        ___        _       _____      
+			 / _ \__  __/ _ \ _ __ / |_ __ |___ / _ __ 
+			| | | \ \/ / | | | '_ \| | '_ \  |_ \| '__|
+			| |_| |>  <| |_| | |_) | | | | |___) | |   
+			 \___//_/\_\____/| .__/|_|_| |_|____/|_|   
+			                 |_|                       
+
+					V1.5
+			Developed By : Jimmi Simon\n"
 	
-			V1.4
-		Developed By : Jimmi Simon\n"
-	
-	echo "Enter the Domain : "
+	printf "\nEnter the Domain : "
 	domain=`python3 tools/domain.py`
 
 	if [[ $domain == *http://* ]] || [[ $domain == *https://* ]];
@@ -29,7 +35,8 @@ then
 		exit
 	else
 		cp config.json tools/knock/knockpy/
-		echo "Domain is $domain , Searching for Subdomains..."
+		printf "\nDomain is $domain , Searching for Subdomains"
+		printf "\nThis may take a while...\n"
 	
 	
 		if [ -f temp.txt ]; then
@@ -56,32 +63,52 @@ then
 		echo "40% Completed..."
 		sub6=`python3 tools/V1D0m/v1d0m.py -d $domain >> temp.txt`
 		echo "45% Completed..."
-		sub7=`curl -s "https://crt.sh/?q=%25.$domain&output=json" | jq -r .[].name_value | sed 's/\*\.//g' | httpx -title -silent | anew | cut -d " " -f1 | sort -u >> temp.txt`
+		sub7=`http "https://crt.sh/?q=%25.$domain&output=json" | jq -r .[].name_value | sed 's/\*\.//g' | httpx -title -silent | anew | cut -d " " -f1 | sort -u >> temp.txt`
 		echo "50% completed..."
-		sub8=`curl -s "https://dns.bufferover.run/dns?q=.$domain" | jq -r .FDNS_A[] |cut -d "," -f2|sort -u >> temp.txt`
+		sub8=`http "https://dns.bufferover.run/dns?q=.$domain" | jq -r .FDNS_A[] |cut -d "," -f2|sort -u >> temp.txt`
 		echo "55% completed..."
-		sub9=`curl -s "https://riddler.io/search/exportcsv?q=pld:$domain" | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u >>temp.txt`
+		sub9=`http "https://riddler.io/search/exportcsv?q=pld:$domain" | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u >>temp.txt`
 		echo "60% completed..."
-		sub10=`curl -s "http://web.archive.org/cdx/search/cdx?url=*.$domain/*&output=text&fl=original&collapse=urlkey" | sed -e 's_https*://__' -e "s/\/.*//" | cut -d ":" -f1 | sort -u >> temp.txt`
+		sub10=`http "http://web.archive.org/cdx/search/cdx?url=*.$domain/*&output=text&fl=original&collapse=urlkey" | sed -e 's_https*://__' -e "s/\/.*//" | cut -d ":" -f1 | sort -u >> temp.txt`
 		echo "70% completed..."
-		sub11=`curl -s 'https://securitytrails.com/list/apex_domain/$domain' | grep -Po '((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+' | grep '.$domain' | sort -u >> temp.txt`
+		sub11=`http 'https://securitytrails.com/list/apex_domain/$domain' | grep -Po '((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+' | grep '.$domain' | sort -u >> temp.txt`
+		echo "75% completed..."
+		sub12=`http "https://www.threatcrowd.org/searchApi/v2/domain/report/?domain=$domain" | jq -r .subdomains[] >> temp.txt`
 		echo "80% completed..."
-	
-		cat temp.txt | sort -u > $domain
+		sub13=`http "https://api.hackertarget.com/hostsearch/?q=$domain" --body | cut -d "," -f1 >> temp.txt`
+		echo "85% completed..."
+		sub14=`http "https://sonar.omnisint.io/subdomains/$domain" --body | grep "$domain" | sed 's/"//g' | sed 's/,//g' | sed 's/ //g' | sort -u >> temp.txt`
+		echo "90% completed..."
+		findomain -t $domain | httprobe >> $domain"new"
+		echo "subdomain enumeration completed.."
+		
+		
+		sort -u temp.txt> $domain
 		sudo rm temp.txt
 	
-	
-		echo "85% completed..."
-		findomain -t $domain | httprobe >> $domain"new"
-		echo "90% completed..."
-		echo "completing in a while..."
+		echo "checking live sub-domains.."
 		fin=`cat $domain | httprobe  >> $domain"new"`
 	
 		echo "sorting..."
-		final=`cat $domain"new" | sort -u > $domain`
+		sort -u $domain"new"> $domain
 		echo "100% completed"
 		sudo rm $domain"new";
-		printf "\n ${Green}Result Saved in $domain \n";
+
+		printf "\n     ${Green}Result Saved in $domain ${NC}\n\n";
+		read -p "Do you want to check Subdomain Takeover y/n : " check
+
+		if [[ $check == "n" || $check == "N" ]];then
+			exit;
+		
+		elif [[ $check == "y" || $check == "Y" ]]; then
+
+			printf "\nChecking for subdomain takeover,This may take a while...\n"
+			python3 tools/takeover/takeover.py -l $domain
+
+		else
+			echo "Enter Correct option"
+		fi
+
 	fi
 else
         echo "Enter Correct Option";
