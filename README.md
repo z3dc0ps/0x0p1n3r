@@ -23,7 +23,7 @@
   </p>
   
 <br>
-<h4>0x0p1n3r is set of combination of other tools and one line scripts to find subdomains easily </h4>
+<h4>0x0p1n3r is set of combination of other tools and one line scripts to find subdomains easily and to check subdomain takeover </h4>
 
 ## Note :
    Read README.md before Installation 
