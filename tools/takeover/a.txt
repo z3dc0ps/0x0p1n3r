@@ -1,0 +1,6 @@
+ask.github.io
+http://ask.github.io
+https://ask.github.io
+a.google.com
+http://a.google.com
+https://a.google.com
