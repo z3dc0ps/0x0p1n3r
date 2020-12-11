@@ -38,6 +38,7 @@
         knockpy
         sublist3r
         Sub-Z
+        takeover
         v1d0m
     Domains:
         api.hackertarget.com
@@ -96,6 +97,7 @@ $ bash run.sh
  [@Jitesh Kumar](https://github.com/j1t3sh)<br>
  [@Nacho Brihuega](https://github.com/n4xh4ck5)<br>
  [@KingOfBugbounty](https://github.com/KingOfBugbounty)<br>
+ [@mallok](https://github.com/m4ll0k)<br>
  
  <br><br>
  
