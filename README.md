@@ -103,4 +103,4 @@ $ bash run.sh
 
 
 
-<a href="https://www.buymeacoffee.com/jimmisimon" target="_blank"><img height="50px" width="200px;" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" ></a>
+<a href="https://www.buymeacoffee.com/jimmisimon" target="_blank"><img height="50px" width="200px;" src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" ></a>
