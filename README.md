@@ -33,7 +33,7 @@
     Scripts:
         amass
         assetfinder
-	findomain
+        findomain
         gau
         knockpy
         sublist3r
