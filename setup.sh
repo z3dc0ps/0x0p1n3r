@@ -10,7 +10,7 @@ pip3 install -r ./requirements.txt
 git clone https://github.com/Edu4rdSHL/findomain.git tools/findomain
 cd tools/findomain/
 cargo build --release
-sudo cp target/release/findomain /usr/bin/
+sudo cp target/release/findomain /bin/
 cd ../../
 GO111MODULE=on go get -u -v github.com/lc/gau
 go get -u github.com/tomnomnom/httprobe
