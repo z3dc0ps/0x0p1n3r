@@ -58,9 +58,7 @@ then
 		sub3=`python3 tools/knock/knockpy/knockpy.py $domain | cut -d "," -f1  | tr "]" " "| tr '"' " " | tr "[" " "  | cut -d " " -f6 >>temp.txt`
 		echo "25% Completed..."
 		sub4=`python3 tools/Sublist3r/sublist3r.py -d $domain -n >> temp.txt`
-		echo "30% Completed..."
-		sub5=`python3 tools/SUB-Z/Sub-Z.py -d $domain | cut -d "/" -f3 >> temp.txt`
-		echo "40% Completed..."
+		echo "35% Completed..."
 		sub6=`python3 tools/V1D0m/v1d0m.py -d $domain >> temp.txt`
 		echo "45% Completed..."
 		sub7=`http "https://crt.sh/?q=%25.$domain&output=json" | jq -r .[].name_value | sed 's/\*\.//g' | httpx -title -silent | anew | cut -d " " -f1 | sort -u >> temp.txt`
