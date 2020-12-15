@@ -37,7 +37,6 @@
         gau
         knockpy
         sublist3r
-        Sub-Z
         takeover
         v1d0m
     Domains:
@@ -94,7 +93,6 @@ $ bash run.sh
  [@Tom Hudson](https://github.com/tomnomnom) <br>
  [@Corben Leo](https://github.com/lc)<br>
  [@Ahmed Aboul-Ela](https://github.com/aboul3la)<br>
- [@Jitesh Kumar](https://github.com/j1t3sh)<br>
  [@Nacho Brihuega](https://github.com/n4xh4ck5)<br>
  [@KingOfBugbounty](https://github.com/KingOfBugbounty)<br>
  [@mallok](https://github.com/m4ll0k)<br>
